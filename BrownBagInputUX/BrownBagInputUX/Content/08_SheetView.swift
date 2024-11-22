@@ -15,9 +15,10 @@ struct SheetView: View {
             .font(.largeTitle)
             .onTapGesture {
                 showSheet = true
-            }
+            }//modifier that allows sheet presentation
             .sheet(isPresented: $showSheet) {
-                CardView()
+                CardView() //you can call anything here
+                /*Text("Sheet")*/ //Whatever you setup, will be inside of sheet view
             }
         
     }

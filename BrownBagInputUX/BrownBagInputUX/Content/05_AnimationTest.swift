@@ -10,9 +10,12 @@ import SwiftUI
 struct AnimationTest: View {
     //Intro of state variabler
     @State private var scale : Double = 1.0
+    @State private var opacity : Double = 1.0
+    
     var body: some View {
         Circle()
             .scale(scale)
+            .opacity(opacity)
             .onTapGesture {
                 //Spring Curve
 //                withAnimation(.spring(.bouncy)){
@@ -27,8 +30,9 @@ struct AnimationTest: View {
 //                    scale = 0.3
 //                }
                 //Cubic-bezier
-                withAnimation(.timingCurve(0.4, 0.0, 0.2, 1,duration:0.5)){
+                withAnimation(.spring(.bouncy)){
                     scale = 0.3
+                    opacity = 1.0
                 }
             }
     }

@@ -9,15 +9,14 @@ import SwiftUI
 
 struct MakeItScrollView: View {
     var body: some View {
-        ScrollView {
-            CardView()
-            CardView()
-            CardView()
-            CardView()
-            CardView()
 
+        ScrollView {
+            CardView()//you can pass your own metadata to show different info
+            CardView()
+            CardView()
+            CardView()
+            CardView()
         }
-        
     }
 }
 
