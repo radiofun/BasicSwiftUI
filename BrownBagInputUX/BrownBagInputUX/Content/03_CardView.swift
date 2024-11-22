@@ -40,7 +40,8 @@ struct CardView: View {
         .frame(maxHeight:160)
         .cornerRadius(10)
         .shadow(color:.black.opacity(0.2),radius: 8)
-        .padding(6)
+        .padding([.leading, .trailing], 16)
+        .padding([.top, .bottom], 8)
 
     }
 }

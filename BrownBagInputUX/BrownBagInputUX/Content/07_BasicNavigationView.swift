@@ -13,15 +13,16 @@ struct BasicNavigationView: View {
         ZStack{
             NavigationStack{
                 NavigationLink{
+                    //can direct to different view conditionally
                     if isProto == true {
                         CardView()
                     } else {
                         AnimationTest()
                     }
                 } label: {
-                    Text("Push Navigation")
-                        .font(.largeTitle)
-
+                    Text("Open Navigation")
+                        .font(.system(size: 24, design: .rounded))
+                        .bold()
                 }
             }
             Toggle(isProto ? "CardView" : "CircleView", isOn: $isProto)

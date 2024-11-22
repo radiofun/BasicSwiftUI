@@ -15,9 +15,7 @@ struct DragTestView: View {
                 .onTapGesture {
                     withAnimation(.spring()){
                         offset = .zero
-                    }
-                    
-                    
+                    }                    
                 }
             CardView()
                 .offset(offset)

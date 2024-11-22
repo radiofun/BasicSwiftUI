@@ -11,7 +11,7 @@ struct ScrollViewTest: View {
     var body: some View {
         VStack{
             ForEach(0..<3) { _ in
-                ScrollView(.horizontal, showsIndicators: false) {
+                ScrollView(.horizontal) {
                     //Horizontal Layout
                     HStack{
                         Circle()
