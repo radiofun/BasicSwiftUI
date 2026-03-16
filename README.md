@@ -1,5 +1,9 @@
 # BasicSwiftUI
 
+## Description
+
+BasicSwiftUI is a hands-on demo repository for learning core SwiftUI building blocks through small, focused examples. It is organized as a "brown bag" style project, where each numbered file introduces one UI concept (layout, navigation, animation, gestures, and state) that you can run and compare quickly in one app.
+
 A SwiftUI learning project structured as a "brown bag" (informal internal demo) covering the most common input and UX patterns in SwiftUI. Nine numbered examples are bundled into a single tabbed app.
 
 ## What it covers
